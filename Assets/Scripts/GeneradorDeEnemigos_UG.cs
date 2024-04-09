@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeneradorDeEnemigos : MonoBehaviour
+public class GeneradorDeEnemigos_UG : MonoBehaviour
 {
 
-    public GameObject zombiePrefab;
+    public GameObject[] zombiePrefab;
     public Transform[] puntosDeGeneracion;
     public float tiempoDeGeneracion = 2f;
     public int numeroEnemigos;
@@ -33,7 +33,7 @@ public class GeneradorDeEnemigos : MonoBehaviour
 
             int indexPuntoDeGeneracion = Random.Range(0,puntosDeGeneracion.Length);
             Transform puntoDeGeneracion = puntosDeGeneracion[indexPuntoDeGeneracion];
-            Instantiate(zombiePrefab, puntoDeGeneracion.position, puntoDeGeneracion.rotation);
+            Instantiate(zombiePrefab[indexPuntoDeGeneracion], puntoDeGeneracion.position, puntoDeGeneracion.rotation);
 
             yield return new WaitForSeconds(tiempoDeGeneracion);
         }

@@ -9,6 +9,8 @@ TagManager:
   - MasVelo
   - MasBalas
   - "MayorDa\xF1o"
+  - WayPoint
+  - FinalDoor
   layers:
   - Default
   - TransparentFX

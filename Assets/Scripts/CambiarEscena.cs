@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class CambiarEscena : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int numeroEscena;
+    //public int numeroEscena;
 
     // Update is called once per frame
-    public void cambioEscena()
+    public void cambioEscena(string numeroEscena)
     {
         SceneManager.LoadScene(numeroEscena);
     }

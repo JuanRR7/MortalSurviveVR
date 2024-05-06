@@ -151,7 +151,7 @@ public class LogicaArma : MonoBehaviour {
         }
     }
 
-    void Disparar()
+    public void Disparar()
     {
         audioSource.PlayOneShot(SonDisparo);
         tiempoNoDisparo = true;

@@ -9,7 +9,7 @@ public class GeneradorDeEnemigos_UG : MonoBehaviour
     public Transform[] puntosDeGeneracion;
     public float tiempoDeGeneracion = 2f;
     public int numeroEnemigos;
-    public int numeroOleada= 3;
+    public int numeroOleada= 1;
 
     //public PantallaBalas pantallaBalas;//acceder a otro script
     

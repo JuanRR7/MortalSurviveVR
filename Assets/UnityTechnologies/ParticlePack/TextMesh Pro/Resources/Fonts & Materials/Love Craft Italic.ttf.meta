@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: be6d5f7fe130fde409a078a3b7d28074
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Love Craft
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 456dd24bc26645e40a39d2dd470bca9d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c337c3f4a3d217741a040ec17f577b84
+=======
+guid: 735731c1617577242b32f3558d96e99b
+>>>>>>> origin/simulator-and-counter
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

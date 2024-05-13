@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class WP_Actor : MonoBehaviour
 {
-    float speed = 5.0f;
+    float speed = 1.0f;
     private Transform target;
     public string nameOfPath;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         FindWayPoint();
         transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class WP_Actor : MonoBehaviour
 
         if(other.tag == "FinalDoor"){
             Destroy(gameObject);
+            gameManager.limiteZombies--;
         }
     }
 

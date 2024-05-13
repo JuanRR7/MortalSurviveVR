@@ -7,7 +7,7 @@ public class LogicaSimpleEnemigo : MonoBehaviour
 {
     private Vida vida;
     private Animator animator;
-    private Collider collider;
+    //private Collider collider;
     public bool Vida0 = false;
 
     // Start is called before the first frame update

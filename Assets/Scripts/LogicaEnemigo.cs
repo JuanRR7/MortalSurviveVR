@@ -14,7 +14,7 @@ public class LogicaEnemigo : MonoBehaviour
     private LogicaJugador logicaJugador;
     public bool Vida0 = false;
     public bool estaAtacando = false;
-    public float speed = 1.0f;
+    public float speed = 0.8f;
     public float angularSpeed = 120;
     public float daño = 25;
     public bool mirando;

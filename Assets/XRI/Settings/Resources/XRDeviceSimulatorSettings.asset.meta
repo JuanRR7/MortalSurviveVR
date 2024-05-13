@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 51f4599f0b044e74ebf6dd196d525d67
+=======
+guid: b6d8c4d04d43fc9478adfe2be7f9c843
+>>>>>>> origin/simulator-and-counter
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

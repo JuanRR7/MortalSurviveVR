@@ -7,8 +7,12 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int limiteZombies = 0;
-    public TextMeshProUGUI contadorZ;
+    public TextMeshProUGUI contadorZUI;
+    public TextMeshProUGUI killsUI;
+    public TextMeshProUGUI hordeUI;
     public bool gameOver = false;
+    public int points = 0;
+    public int horde = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +23,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        contadorZ.text = limiteZombies + "";
+        contadorZUI.text = limiteZombies + "";
+        killsUI.text = points + "";
+        hordeUI.text = horde + "";
 
         if(limiteZombies == 0) gameOver = true;
+
+        if(limiteZombies < 3) contadorZUI.color = new Color(1.0f, 0.22f, 0.22f);
     }
 }

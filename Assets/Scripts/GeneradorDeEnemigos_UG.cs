@@ -10,18 +10,19 @@ public class GeneradorDeEnemigos_UG : MonoBehaviour
     public float tiempoDeGeneracion = 2f;
     public int numeroEnemigos;
     public int numeroOleada= 1;
+    private GameManager gameManager;
 
     //public PantallaBalas pantallaBalas;//acceder a otro script
     
 
     // Start is called before the first frame update
     void Start()
-    {
-              
+    {    
        StartCoroutine(AparecerEnemigo(numeroOleada));
-       Debug.Log("Nueva Ronda"+ numeroOleada);
-          
-       
+       gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+       Debug.Log("Zombies generados: "+ numeroOleada);
+       Debug.Log("Horda numero: "+ gameManager.horde);
     }
 
     IEnumerator AparecerEnemigo(int enemigAGenerar)
@@ -57,10 +58,11 @@ public class GeneradorDeEnemigos_UG : MonoBehaviour
         if(numeroEnemigos == 0)
         {
             //pantallaBalas.FinOleada();
-            numeroOleada+=10;
+            numeroOleada += 6;
+            gameManager.horde++;
             StartCoroutine(AparecerEnemigo(numeroOleada));
-            Debug.Log("Nueva Ronda"+ numeroOleada);
-
+            Debug.Log("Zombies generados: "+ numeroOleada);
+            Debug.Log("Horda numero: "+ gameManager.horde);
         }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07422461, g: 0.06627047, b: 0.04367186, a: 1}
+  m_IndirectSpecularColor: {r: 0.28244445, g: 0.2649285, b: 0.21052706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -286,7 +286,6 @@ MonoBehaviour:
   tiempoDeGeneracion: 3
   numeroEnemigos: 0
   numeroOleada: 15
-  pantallaBalas: {fileID: 1584591986}
 --- !u!4 &45568210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558156273932248, guid: eaa8983aaca76c6468a4943faf958a82, type: 3}

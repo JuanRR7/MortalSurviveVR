@@ -11,6 +11,8 @@ TagManager:
   - "MayorDa\xF1o"
   - WayPoint
   - FinalDoor
+  - Bala
+  - Municion
   layers:
   - Default
   - TransparentFX

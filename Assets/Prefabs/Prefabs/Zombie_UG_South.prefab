@@ -2552,6 +2552,7 @@ Transform:
   - {fileID: 4910153628747524243}
   - {fileID: 4182207937147230023}
   - {fileID: 7907184767457971183}
+  - {fileID: 8012937445840880084}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2684,7 +2685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Vida0: 0
   "da\xF1o": 20
-  blood: {fileID: 3339262059600722431, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+  blood: {fileID: 7891366868252373354}
 --- !u!82 &8112265739139914399
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3235,3 +3236,70 @@ Transform:
   m_Father: {fileID: 4467845176380026833}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4887731046562957461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6554511027928827424}
+    m_Modifications:
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.207
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237090021086045815, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+      propertyPath: m_Name
+      value: FX_BloodSplat_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+--- !u!4 &8012937445840880084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3235582733888325953, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+  m_PrefabInstance: {fileID: 4887731046562957461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7891366868252373354 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3339262059600722431, guid: d3b0aef860d9631478e97057fefccf1d, type: 3}
+  m_PrefabInstance: {fileID: 4887731046562957461}
+  m_PrefabAsset: {fileID: 0}

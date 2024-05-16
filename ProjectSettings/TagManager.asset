@@ -13,6 +13,7 @@ TagManager:
   - FinalDoor
   - Bala
   - Municion
+  - Hand
   layers:
   - Default
   - TransparentFX

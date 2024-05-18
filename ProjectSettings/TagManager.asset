@@ -14,6 +14,9 @@ TagManager:
   - Bala
   - Municion
   - Hand
+  - Flog
+  - turret
+  - InitialPoint
   layers:
   - Default
   - TransparentFX

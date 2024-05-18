@@ -8,10 +8,12 @@ public class WP_Actor : MonoBehaviour
     private Transform target;
     public string nameOfPath;
     private GameManager gameManager;
+    private ButtonPowerUp buttonPowerUpScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        buttonPowerUpScript = GameObject.Find("ColliderFrezeer").GetComponent<ButtonPowerUp>();
         FindWayPoint();
         transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -20,6 +22,7 @@ public class WP_Actor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RevisarPowerUpFrezeer();
         transform.Translate(new Vector3(0, 0, speed*Time.deltaTime));
     }
 
@@ -37,5 +40,11 @@ public class WP_Actor : MonoBehaviour
 
     private void FindWayPoint(){
         target = GameObject.Find(nameOfPath).transform;
+    }
+
+    void RevisarPowerUpFrezeer()
+    {
+        if(buttonPowerUpScript.isActiveFrezzer == true) speed = 0.1f;
+        else speed = 1.5f;
     }
 }

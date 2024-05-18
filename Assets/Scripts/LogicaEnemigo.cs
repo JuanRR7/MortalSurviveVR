@@ -18,6 +18,7 @@ public class LogicaEnemigo : MonoBehaviour
     public float angularSpeed = 120;
     public float daño = 25;
     public bool mirando;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,7 @@ public class LogicaEnemigo : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         RevisarVida();
         Perseguir();
         RevisarAtaque();

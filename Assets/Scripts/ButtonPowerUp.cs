@@ -17,6 +17,10 @@ public class ButtonPowerUp : MonoBehaviour
     public GameObject push;
     private Renderer materialOnUse;
     private AudioSource sound;
+    public GameObject[] flogObjects;
+    public bool isActiveFrezzer = false;
+    public bool isActiveHelper = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +38,21 @@ public class ButtonPowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(!isActive && !isReady)
+        {
+            if(gameObject.name == "ColliderFrezeer")
+            {
+                isActiveFrezzer = false;
+                foreach (GameObject obj in flogObjects)
+                {
+                    obj.SetActive(false);
+                }
+            }
+            else if(gameObject.name == "ColliderHelper")
+            {
+                isActiveHelper = false;
+            }
+        }
     }
 
     IEnumerator ReloadPowerUp()
@@ -64,17 +82,34 @@ public class ButtonPowerUp : MonoBehaviour
             StartCoroutine(ReloadPowerUp());
         }else if(lifeTime > 0){
             materialOnUse.material = offMaterial;
-            StartCoroutine(UsingPowerUp());
+            StartCoroutine(UsingPowerUp());   
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if(other.CompareTag("Hand") && isReady){
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.CompareTag("Hand") && isReady)
+        {
             timer.text = "...";
             sound.Play();
             isActive = true;
             isReady = false;
+
+            if (gameObject.name == "ColliderHelper")
+            {
+                isActiveHelper = true;
+            }
+            else if(gameObject.name == "ColliderFrezeer")
+            {
+                isActiveFrezzer = true;
+                foreach (GameObject obj in flogObjects)
+                {
+                    obj.SetActive(true);
+                }
+            }
+            
             StartCoroutine(UsingPowerUp());
         }
+        
     }
 }

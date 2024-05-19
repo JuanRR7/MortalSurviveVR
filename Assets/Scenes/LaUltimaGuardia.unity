@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30672264, g: 0.29403663, b: 0.24390027, a: 1}
+  m_IndirectSpecularColor: {r: 0.30672282, g: 0.29403675, b: 0.2439003, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3513,7 +3513,7 @@ AudioSource:
   m_GameObject: {fileID: 421245533}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: eb82bf943933bf8479e2820dea3777ee, type: 2}
   m_audioClip: {fileID: 8300000, guid: e2d8823f1a534d74182ad195f80f6d0d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4

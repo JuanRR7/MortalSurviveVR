@@ -5,9 +5,12 @@ using UnityEngine.Audio;
 
 public class ControlMusica : MonoBehaviour
 {
-    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private AudioMixer musica;
+    [SerializeField] private AudioMixer sonido;
     public void ControldeMusica(float sliderMusica){
-        audioMixer.SetFloat("VolumenMusica",Mathf.Log10(sliderMusica)*20);
-
+        musica.SetFloat("VolumenMusica",Mathf.Log10(sliderMusica)*20);
+    }
+    public void ControldeSonido(float sliderSonido){
+        sonido.SetFloat("VolumenSonido",Mathf.Log10(sliderSonido)*20);
     }
 }

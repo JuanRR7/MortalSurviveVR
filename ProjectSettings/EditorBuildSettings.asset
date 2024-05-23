@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LaUltimaGuardia.unity
     guid: edea451ac95ad48499108e5c4141dcbe
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 56d31e980f32a5249a15a9c1ce22cf08, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c2c861b2402be7b4282b27e4bbea907b, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4436b05349683f44c8df9167980fada1, type: 2}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WP_Actor : MonoBehaviour
 {
-    float speed = 1.5f;
+    public float speed = 1.5f;
     private Transform target;
     public string nameOfPath;
     private GameManager gameManager;
@@ -32,7 +32,7 @@ public class WP_Actor : MonoBehaviour
             transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
         }
 
-        if(other.tag == "FinalDoor"){
+        if(other.tag == "FinalDoor" && !gameManager.gameOver){
             Destroy(gameObject);
             gameManager.limiteZombies--;
         }

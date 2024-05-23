@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Reload : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Reload : MonoBehaviour
     private bool emptyGun = false;
     public AudioClip reloadSound;
     private AudioSource audioSource;
+    public TextMeshProUGUI numOfBulletUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,8 @@ public class Reload : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Municion")){
-            gunCode.numOfBullet += 12;
+            gunCode.numOfBullet += 20;
+            numOfBulletUI.text = gunCode.numOfBullet + "";
             audioSource.PlayOneShot(reloadSound);
             Destroy(other.gameObject,1f);
         }

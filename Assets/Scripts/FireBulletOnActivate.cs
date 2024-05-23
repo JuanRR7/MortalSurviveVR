@@ -7,12 +7,12 @@ public class FireBulletOnActivate : MonoBehaviour
 {
     public GameObject bullet;
     public Transform spawnPoint;
-    public float fireSpeed = 25;
+    public float fireSpeed = 36;
     public AudioClip shoot;
     public AudioClip withoutBullets;
     private AudioSource audioSource;
     public ParticleSystem shootParticle;
-    public int numOfBullet = 12;
+    public int numOfBullet = 20;
     public TextMeshProUGUI numOfBulletUI;
 
     // Start is called before the first frame update

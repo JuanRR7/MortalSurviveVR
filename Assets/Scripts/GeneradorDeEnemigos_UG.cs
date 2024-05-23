@@ -55,7 +55,7 @@ public class GeneradorDeEnemigos_UG : MonoBehaviour
         //cuenta de los enemigos en pantalla
         numeroEnemigos = GameObject.FindGameObjectsWithTag("Enemigo").Length;
         //si  llega a 0 se vulven a generar
-        if(numeroEnemigos == 0)
+        if(numeroEnemigos == 0 && !gameManager.gameOver)
         {
             //pantallaBalas.FinOleada();
             numeroOleada += 6;

@@ -13,11 +13,19 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public int points = 0;
     public int horde = 1;
+    public GameObject gameOverScreen;
+    public TextMeshProUGUI score;
+    public TextMeshProUGUI hordes;
+    /*private GameObject bulletsGroup;
+    public GameObject bulletsGenerator;
+    private GenerateMoreBullets generateMoreBullets;*/
 
     // Start is called before the first frame update
     void Start()
     {
         limiteZombies = Random.Range(5,15);
+        /*bulletsGroup = GameObject.Find("--DYNAMIC--");
+        generateMoreBullets = bulletsGenerator.GetComponent<GenerateMoreBullets>();*/
     }
 
     // Update is called once per frame
@@ -27,8 +35,19 @@ public class GameManager : MonoBehaviour
         killsUI.text = points + "";
         hordeUI.text = horde + "";
 
-        if(limiteZombies == 0) gameOver = true;
-
         if(limiteZombies < 3) contadorZUI.color = new Color(1.0f, 0.22f, 0.22f);
+
+        if(limiteZombies == 0){
+            gameOver = true;
+            hordes.text = "Hordas resistidas: " + horde;
+            score.text = "Zombies aniquilados: " + points;
+            gameOverScreen.SetActive(true);
+        }
+
+        /*if(bulletsGroup.transform.childCount == 0)
+        {
+            Destroy(bulletsGroup);
+            generateMoreBullets.generateBullets();
+        }*/
     }
 }

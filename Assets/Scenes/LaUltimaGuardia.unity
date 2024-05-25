@@ -3848,7 +3848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 786338893866541576, guid: 55b0a8fa51308a248829c61978c5b278, type: 3}
   spawnPoint: {fileID: 2047759657}
-  fireSpeed: 33
+  fireSpeed: 40
   shoot: {fileID: 8300000, guid: 468ad6f33726dab4e9925a8c560858fd, type: 3}
   withoutBullets: {fileID: 8300000, guid: 7dbad30ab37cdaf41a027a3fbee320e2, type: 3}
   shootParticle: {fileID: 1936638841}

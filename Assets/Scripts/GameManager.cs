@@ -16,16 +16,16 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public TextMeshProUGUI score;
     public TextMeshProUGUI hordes;
-    /*private GameObject bulletsGroup;
+    private GameObject bulletsGroup;
     public GameObject bulletsGenerator;
-    private GenerateMoreBullets generateMoreBullets;*/
+    private GenerateMoreBullets generateMoreBullets;
 
     // Start is called before the first frame update
     void Start()
     {
         limiteZombies = Random.Range(5,15);
-        /*bulletsGroup = GameObject.Find("--DYNAMIC--");
-        generateMoreBullets = bulletsGenerator.GetComponent<GenerateMoreBullets>();*/
+        bulletsGroup = GameObject.Find("--DYNAMIC--");
+        generateMoreBullets = bulletsGenerator.GetComponent<GenerateMoreBullets>();
     }
 
     // Update is called once per frame
@@ -44,10 +44,11 @@ public class GameManager : MonoBehaviour
             gameOverScreen.SetActive(true);
         }
 
-        /*if(bulletsGroup.transform.childCount == 0)
+        if(bulletsGroup.transform.childCount == 1)
         {
             Destroy(bulletsGroup);
             generateMoreBullets.generateBullets();
-        }*/
+            bulletsGroup = GameObject.Find("--DYNAMIC--(Clone)");
+        }
     }
 }

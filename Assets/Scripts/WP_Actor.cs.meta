@@ -3,7 +3,8 @@ guid: 1f680b7b80da64e46ab0272e8d5f94a4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - crossAlarm: {fileID: 8300000, guid: 632cd4f01b321924ca0ba7efac4e2db4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

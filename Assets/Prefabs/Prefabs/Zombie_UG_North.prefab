@@ -2092,7 +2092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f680b7b80da64e46ab0272e8d5f94a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1.5
   nameOfPath: ZombiesPathNorth/Waypoint
+  crossAlarm: {fileID: 8300000, guid: 69a6973f1b270b6409921ff52c0f12c2, type: 3}
 --- !u!114 &6393136536429819965
 MonoBehaviour:
   m_ObjectHideFlags: 0

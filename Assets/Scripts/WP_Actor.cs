@@ -10,6 +10,9 @@ public class WP_Actor : MonoBehaviour
     private GameManager gameManager;
     private ButtonPowerUp buttonPowerUpScript;
 
+    private AudioSource audioSource;
+    public AudioClip crossAlarm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,7 @@ public class WP_Actor : MonoBehaviour
         FindWayPoint();
         transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        audioSource = gameManager.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class WP_Actor : MonoBehaviour
         if(other.tag == "FinalDoor" && !gameManager.gameOver){
             Destroy(gameObject);
             gameManager.limiteZombies--;
+            audioSource.PlayOneShot(crossAlarm);
         }
     }
 

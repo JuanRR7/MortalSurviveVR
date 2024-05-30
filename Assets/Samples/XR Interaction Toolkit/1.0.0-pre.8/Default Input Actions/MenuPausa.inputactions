@@ -1,0 +1,34 @@
+{
+    "name": "MenuPausa",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "c711ddbe-5486-4317-9194-fedbbf32827a",
+            "actions": [
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "0ccf76b4-0e20-40f3-805c-c5f01b19b02c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9949101a-a22d-4b0f-ab96-1746463fdb4f",
+                    "path": "<XRController>{RightHand}/menuButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
